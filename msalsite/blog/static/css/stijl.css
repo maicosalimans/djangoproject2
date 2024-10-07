@@ -1,14 +1,52 @@
 body{
-background-color: orange;
-color: black;
-}
+    background-color:darkred;
+    color: black;
+    }
+        
+    header{
+    position: relative;
+    min-height: 130px;
+    background-color: orange;
+    Color: black;
+    }
+        
+    h1{
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    color: black;
+    }
+    
+    h2{
+    color:orange;
+    }
+    
+    a{
+    color: black;
+    }    
 
-h1{
-color: white;
-}
-
-article{
-width: 500px;
-margin-bottom: 40px;
-border: 3px solid red;
-}
+    .post-title-color {
+         color: orange;   /* Your desired color */
+    }
+    
+    article{
+    margin-left: 40%;
+    margin-right: 20%;
+    border: 5px solid white;
+    color: black;
+    background-color: rgb(248, 174, 232);
+    margin-bottom: 10px;
+    margin-top:30px;
+    }
+            
+        
+    footer{
+    position: absolute;
+    width: 100%;
+    min-height: 100px;
+    background-color: orange;
+    }
+        
+        
+            
+        

@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en" dir='ltr'>
-
 <head>
 <meta charset="utf-8">
 <!-- Bootstrap CSS -->
@@ -13,19 +12,17 @@ crossorigin="anonymous">
 <link rel="stylesheet" href="{% static 'css/stijl.css' %}">
 <title></title>
 </head>
-
 <body>
-{% block content %}
-{% for post in posts %}
-<article class="post">
-<time class="date">
-{{ post.published_date }}
-</time>
-<h2><a href="">{{ post.title }}</a></h2>
-<p>{{ post.text|linebreaksbr }}</p>
-</article>
-{% endfor %}
+<header>
+ <h1>Mijn Website</h1>   
+ <a href="{% url 'post_nieuw' %}" class="top-menu">Post schrijven</a>
+ <a href="{% url 'poll_view' %}" class="top-menu">Poll</a>
+</header>
+<section>
+{% block inhoud %}
 {% endblock %}
+</section>
+<footer>
+</footer>
 </body>
-
-</html> 
+</html>
